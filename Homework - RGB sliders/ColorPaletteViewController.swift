@@ -22,14 +22,28 @@ class ColorPaletteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateLabels()
+        updateViewBackground()
     }
 
-
-    @IBAction func sliderAction() {
+    @IBAction func sliderValueWasChanged() {
+        updateLabels()
+        updateViewBackground()
     }
     
+    private func updateLabels() {
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
+    }
     
-    
-    
+    private func updateViewBackground() {
+        mainView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1.0
+        )
+    }
 }
 

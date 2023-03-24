@@ -83,18 +83,24 @@
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <color key="thumbTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="2QV-5P-deF"/>
+                                                    <action selector="sliderValueWasChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="fac-Fk-7z0"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="x7g-uA-pJv">
                                                 <rect key="frame" x="-2" y="59" width="188" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="thumbTintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="sliderValueWasChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="VsT-B2-ktu"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Tt-IE-DPk">
                                                 <rect key="frame" x="-2" y="118" width="188" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                                                <connections>
+                                                    <action selector="sliderValueWasChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="Dpt-aS-53A"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
