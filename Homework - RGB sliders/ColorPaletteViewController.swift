@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorPaletteViewController: UIViewController {
+final class ColorPaletteViewController: UIViewController {
 
     @IBOutlet var mainView: UIView!
     
