@@ -22,6 +22,7 @@ final class ColorPaletteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mainView.layer.cornerRadius = 20
         updateLabels()
         updateViewBackground()
     }
