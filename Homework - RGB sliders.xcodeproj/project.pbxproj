@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		687A632F29E6B6140059147A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687A632E29E6B6140059147A /* MainViewController.swift */; };
 		687CF2E029CDACC1002C6AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CF2DF29CDACC1002C6AC7 /* AppDelegate.swift */; };
 		687CF2E229CDACC1002C6AC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CF2E129CDACC1002C6AC7 /* SceneDelegate.swift */; };
-		687CF2E429CDACC1002C6AC7 /* ColorPaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CF2E329CDACC1002C6AC7 /* ColorPaletteViewController.swift */; };
+		687CF2E429CDACC1002C6AC7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687CF2E329CDACC1002C6AC7 /* SettingsViewController.swift */; };
 		687CF2E729CDACC1002C6AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687CF2E529CDACC1002C6AC7 /* Main.storyboard */; };
 		687CF2E929CDACC3002C6AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687CF2E829CDACC3002C6AC7 /* Assets.xcassets */; };
 		687CF2EC29CDACC3002C6AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687CF2EA29CDACC3002C6AC7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		687A632E29E6B6140059147A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		687CF2DC29CDACC1002C6AC7 /* Homework - RGB sliders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework - RGB sliders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		687CF2DF29CDACC1002C6AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		687CF2E129CDACC1002C6AC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		687CF2E329CDACC1002C6AC7 /* ColorPaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteViewController.swift; sourceTree = "<group>"; };
+		687CF2E329CDACC1002C6AC7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		687CF2E629CDACC1002C6AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		687CF2E829CDACC3002C6AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687CF2EB29CDACC3002C6AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		687A632B29E6B56F0059147A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				687A632E29E6B6140059147A /* MainViewController.swift */,
+				687CF2E329CDACC1002C6AC7 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		687A632C29E6B5810059147A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				687CF2E529CDACC1002C6AC7 /* Main.storyboard */,
+				687CF2EA29CDACC3002C6AC7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		687A632D29E6B5960059147A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				687CF2DF29CDACC1002C6AC7 /* AppDelegate.swift */,
+				687CF2E129CDACC1002C6AC7 /* SceneDelegate.swift */,
+				687CF2ED29CDACC3002C6AC7 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		687CF2D329CDACC1002C6AC7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +86,10 @@
 		687CF2DE29CDACC1002C6AC7 /* Homework - RGB sliders */ = {
 			isa = PBXGroup;
 			children = (
-				687CF2DF29CDACC1002C6AC7 /* AppDelegate.swift */,
-				687CF2E129CDACC1002C6AC7 /* SceneDelegate.swift */,
-				687CF2E329CDACC1002C6AC7 /* ColorPaletteViewController.swift */,
-				687CF2E529CDACC1002C6AC7 /* Main.storyboard */,
+				687A632B29E6B56F0059147A /* ViewControllers */,
+				687A632C29E6B5810059147A /* Storyboards */,
+				687A632D29E6B5960059147A /* App */,
 				687CF2E829CDACC3002C6AC7 /* Assets.xcassets */,
-				687CF2EA29CDACC3002C6AC7 /* LaunchScreen.storyboard */,
-				687CF2ED29CDACC3002C6AC7 /* Info.plist */,
 			);
 			path = "Homework - RGB sliders";
 			sourceTree = "<group>";
@@ -138,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687CF2E429CDACC1002C6AC7 /* ColorPaletteViewController.swift in Sources */,
+				687CF2E429CDACC1002C6AC7 /* SettingsViewController.swift in Sources */,
 				687CF2E029CDACC1002C6AC7 /* AppDelegate.swift in Sources */,
 				687CF2E229CDACC1002C6AC7 /* SceneDelegate.swift in Sources */,
+				687A632F29E6B6140059147A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +316,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework - RGB sliders/Info.plist";
+				INFOPLIST_FILE = "Homework - RGB sliders/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,12 +347,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework - RGB sliders/Info.plist";
+				INFOPLIST_FILE = "Homework - RGB sliders/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
