@@ -19,10 +19,18 @@ final class SettingsViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    var color: UIColor!
+    
+    unowned var delegate: SettingsViewControllerDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         colorView.layer.cornerRadius = 20
-        setColor()
+        colorView.backgroundColor = color
+        
+        setSliderValue()
+        setLabelsValue()
     }
     
     @IBAction func sliderAction(_ sender: UISlider) {
@@ -37,6 +45,11 @@ final class SettingsViewController: UIViewController {
         }
     }
     
+    @IBAction func doneButtonPressed() {
+        delegate.updateViewBackground(with: colorView.backgroundColor ?? color)
+        dismiss(animated: true)
+    }
+    
     private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
@@ -48,5 +61,19 @@ final class SettingsViewController: UIViewController {
     
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
+    }
+    
+    private func setSliderValue() {
+        let ciColor = CIColor(color: color)
+        
+        redSlider.value = Float(ciColor.red)
+        greenSlider.value = Float(ciColor.green)
+        blueSlider.value = Float(Float(ciColor.blue))
+    }
+    
+    private func setLabelsValue() {
+        redLabel.text = string(from: redSlider)
+        greenLabel.text = string(from: greenSlider)
+        blueLabel.text = string(from: blueSlider)
     }
 }

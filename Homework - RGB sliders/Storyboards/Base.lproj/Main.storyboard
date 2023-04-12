@@ -26,7 +26,6 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="medium"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="editButtonPressed" destination="VOx-IH-66V" eventType="touchUpInside" id="cKw-gd-U0A"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DkR-Df-BUa"/>
                                 </connections>
                             </button>
@@ -149,6 +148,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="DONE"/>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rg3-HU-6em"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
